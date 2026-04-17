@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adel Luxe Real Estate</title>
+    <meta name="description" content="Premium real estate agency in Cairo, Egypt. Find your dream home with our exclusive listings.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-gem"></i>
+            <span>Adel Luxe</span>
+        </div>
+        <div class="nav-links">
+            <a href="#featured">Properties</a>
+            <a href="#how-it-works">How it Works</a>
+            <a href="#team">Agents</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact" class="btn-primary">Contact Us</a>
+        </div>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="fade-up">Find Your Perfect Haven</h1>
+                <p class="fade-up delay-1">Discover premium properties in the heart of the city and beyond.</p>
+                <div class="search-bar-container fade-up delay-2">
+                    <form class="search-bar animate-search">
+                        <div class="search-input">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input type="text" placeholder="Location, neighborhood, or city...">
+                        </div>
+                        <div class="search-dropdown">
+                            <select>
+                                <option>Property Type</option>
+                                <option>House</option>
+                                <option>Villa</option>
+                                <option>Apartment</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn-search"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. How It Works -->
+        <section id="how-it-works" class="section reveal">
+            <div class="container">
+                <div class="section-title">
+                    <h2>How It Works</h2>
+                    <p>Your journey to a dream home in three simple steps</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fa-solid fa-magnifying-glass-location"></i></div>
+                        <h3>Search Properties</h3>
+                        <p>Explore our vast database of premium real estate listings tailored to your needs.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fa-solid fa-handshake"></i></div>
+                        <h3>Meet Your Agent</h3>
+                        <p>Connect with our expert agents who will guide you through every step of the process.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fa-solid fa-key"></i></div>
+                        <h3>Close the Deal</h3>
+                        <p>Sign the paperwork and get the keys to your new dream home seamlessly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Property Categories (Horizontal Scroll) -->
+        <section id="categories" class="section bg-light reveal">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-title left-aligned">
+                        <h2>Explore Categories</h2>
+                        <p>Find properties that match your lifestyle</p>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="btn-circular" id="cat-prev" aria-label="Previous categories"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="btn-circular" id="cat-next" aria-label="Next categories"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                
+                <div class="horizontal-scroll-container" id="categories-scroll">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=500&q=80" alt="Luxury Villas" loading="lazy">
+                        <div class="category-overlay">
+                            <h3>Luxury Villas</h3>
+                            <span>120 Properties</span>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=500&q=80" alt="Modern Apartments" loading="lazy">
+                        <div class="category-overlay">
+                            <h3>Modern Apartments</h3>
+                            <span>350 Properties</span>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=500&q=80" alt="Family Homes" loading="lazy">
+                        <div class="category-overlay">
+                            <h3>Family Homes</h3>
+                            <span>85 Properties</span>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=500&q=80" alt="Penthouse" loading="lazy">
+                        <div class="category-overlay">
+                            <h3>Penthouses</h3>
+                            <span>24 Properties</span>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&q=80" alt="Townhouses" loading="lazy">
+                        <div class="category-overlay">
+                            <h3>Townhouses</h3>
+                            <span>56 Properties</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Featured Listings -->
+        <section id="featured" class="section reveal">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Featured Listings</h2>
+                    <p>Handpicked properties selected just for you</p>
+                </div>
+                <div class="properties-grid" id="properties-container">
+                    <!-- Cards will be injected via JS to show skeleton loading -->
+                </div>
+                <div class="text-center mt-4">
+                    <button class="btn-outline">View All Properties</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Interactive Map Placeholder -->
+        <section id="map" class="section p-0 reveal">
+            <div class="map-container">
+                <div class="map-overlay">
+                    <div class="map-card">
+                        <h3>Discover Neighborhoods</h3>
+                        <p>Use our interactive map to find properties in your preferred areas.</p>
+                        <button class="btn-primary mt-2"><i class="fa-solid fa-map-location-dot"></i> Explore Map</button>
+                    </div>
+                </div>
+                <!-- Placeholder for map -->
+                <div class="map-background"></div>
+            </div>
+        </section>
+
+        <!-- 6. Agent / Team Section -->
+        <section id="team" class="section bg-light reveal">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Meet Our Experts</h2>
+                    <p>Dedicated professionals ready to serve you</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="agent-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&q=80" alt="Agent 1" loading="lazy">
+                            <div class="social-links-overlay">
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="agent-info">
+                            <h3>Michael Sterling</h3>
+                            <p>Senior Broker</p>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="agent-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&q=80" alt="Agent 2" loading="lazy">
+                            <div class="social-links-overlay">
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="agent-info">
+                            <h3>Sarah Jenkins</h3>
+                            <p>Luxury Real Estate</p>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="agent-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&q=80" alt="Agent 3" loading="lazy">
+                            <div class="social-links-overlay">
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="agent-info">
+                            <h3>David O'Connor</h3>
+                            <p>Property Consultant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Parallax Testimonials Section -->
+        <section id="testimonials" class="section parallax-section">
+            <div class="parallax-overlay"></div>
+            <div class="container position-relative z-1">
+                <div class="testimonial-slider text-center text-white">
+                    <i class="fa-solid fa-quote-left display-quote"></i>
+                    <h2 class="testimonial-text mb-2">"Adel Luxe transformed our home buying experience. Their attention to detail and market knowledge is unmatched."</h2>
+                    <p class="testimonial-author text-gold">- Jonathan & Emily Clarke</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Blog / Market Insights -->
+        <section id="insights" class="section reveal">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Market Insights</h2>
+                    <p>Latest news, tips, and trends in real estate</p>
+                </div>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500&q=80" alt="Blog 1: Investment Trends" loading="lazy">
+                            <span class="blog-badge">Trends</span>
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date">Apr 08, 2026</span>
+                            <h3>Top 5 Neighborhoods for Investment in 2026</h3>
+                            <p>Discover which areas are seeing the highest growth and where you should look for your next investment.</p>
+                            <a href="#" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=500&q=80" alt="Blog 2: Staging Tips" loading="lazy">
+                            <span class="blog-badge">Tips</span>
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date">Mar 22, 2026</span>
+                            <h3>Staging Your Home for a Quick Sale</h3>
+                            <p>Expert interior design tips that can increase your property's value and attract more potentional buyers.</p>
+                            <a href="#" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Newsletter Signup -->
+        <section id="newsletter" class="newsletter-section reveal">
+            <div class="container">
+                <div class="newsletter-box">
+                    <div class="newsletter-text">
+                        <h2>Don't Miss Out</h2>
+                        <p>Subscribe to get the latest listings and market insights delivered to your inbox.</p>
+                    </div>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <div class="floating-label">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">Email Address</label>
+                        </div>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 10. Contact / Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fa-solid fa-gem text-gold"></i>
+                        <span>Adel Luxe</span>
+                    </div>
+                    <p class="mt-2">Premium real estate agency providing exceptional service and exclusive listings across the country.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#featured">Properties</a></li>
+                        <li><a href="#team">Our Agents</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#insights">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-list">
+                        <li><i class="fa-solid fa-user text-gold"></i> Mohamed Adel</li>
+                        <li><i class="fa-solid fa-envelope text-gold"></i> <a href="mailto:121mohamedadel121@gmail.com">121mohamedadel121@gmail.com</a></li>
+                        <li><i class="fa-solid fa-phone text-gold"></i> <a href="tel:01005483665">01005483665</a></li>
+                        <li><i class="fa-solid fa-location-dot text-gold"></i> Cairo, Egypt</li>
+                        <li><i class="fa-brands fa-linkedin text-gold"></i> <a href="https://www.linkedin.com/in/mohamed-adel-17b969253/" target="_blank">LinkedIn Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adel Luxe Real Estate. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
